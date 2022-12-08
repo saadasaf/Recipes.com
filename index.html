@@ -25,12 +25,12 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
 
-  <body>
+  <body class="bg-dark">
     <!-------------------------------- ***Navbar***--------------------------------->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark pt-lg-3">
       <div class="container">
-        <a class="navbar-brand fs-2 fw-bold" href="#">
-          <i class="fa-solid fa-utensils"></i>
+        <a class="navbar-brand fs-2 fw-bold"  href="#">
+          <i class="fa-solid fa-utensils" id="hoverEmoji"></i>
           <span class="colorGreen">Re</span><span class="colorYallow">ci</span
           ><span class="colorBlue">pes</span></a
         >
@@ -68,47 +68,127 @@
 
     <!-------------------------------- ***image Slider***--------------------------------->
     <div
-      id="carouselExampleFade"
-      class="carousel slide carousel-fade"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div style="background-image:url('/images/basbousa.webp');" 
-          class="slider-image w-100"></div>
-        </div>
-        <div class="carousel-item active">
-          <div style="background-image:url('/images/falafel.jpg');"
-          class="slider-image w-100"></div>
-        </div>
-        <div class="carousel-item active">
-          <div style="background-image:url('/images/shaurma.webp');"
-          class="slider-image w-100"></div>
-        </div>
-        <div class="carousel-item active">
-          <div style="background-image:url('/images/spaghetti.jpg');"
-          class="slider-image w-100"></div>
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleFade"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleFade"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+			id="carouselExampleFade"
+			class="carousel slide carousel-fade"
+			data-bs-ride="carousel"
+		>
+			<div class="carousel-inner">
+				<div class="carousel-item active" data-bs-interval="4000">
+					<div
+						class="slider-image"
+						style="background-image: url('/images/basbousa.webp')"
+					></div>
+				</div>
+				<div class="carousel-item" data-bs-interval="4000">
+					<div
+						class="slider-image"
+						style="background-image: url('/images/falafel.jpg')"
+					></div>
+				</div>
+				<div class="carousel-item" data-bs-interval="4000">
+					<div
+						class="slider-image"
+						style="background-image: url('/images/shaurma.webp')"
+					></div>
+				</div>
+        <div class="carousel-item" data-bs-interval="4000">
+					<div
+						class="slider-image"
+						style="background-image: url('/images/spaghetti.jpg')"
+					></div>
+				</div>
+			</div>
+			<button
+				class="carousel-control-prev"
+				type="button"
+				data-bs-target="#carouselExampleFade"
+				data-bs-slide="prev"
+			>
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button
+				class="carousel-control-next"
+				type="button"
+				data-bs-target="#carouselExampleFade"
+				data-bs-slide="next"
+			>
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+
+    <!------------------------------------ Website Infos -------------->
+		<div class="container mt-5 text-white">
+			<h1 class="colorGreen fw-bold">My Food!</h1>
+			<p>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam dicta
+				totam ratione nostrum aperiam quasi corrupti quisquam a qui debitis,
+				ipsa aliquam rerum dolorum provident consequuntur ea, iusto
+				exercitationem! Eius eaque animi quae quia praesentium, corporis
+				assumenda hic dolores voluptatibus porro impedit id atque tenetur
+				perspiciatis itaque laboriosam nihil! Velit.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deserunt
+				incidunt inventore blanditiis tempore provident est quibusdam.
+				Necessitatibus distinctio ea earum sequi id praesentium corrupti
+				deleniti laborum expedita perferendis dignissimos dolorem tempora dicta
+				repudiandae eos nobis voluptatem cupiditate eaque, vitae quae ab nemo
+				quaerat harum? Libero quam asperiores doloremque exercitationem!
+				Repellat quia placeat debitis porro odio tempora eaque facilis
+				excepturi!
+			</p>
+		</div>
+		<section id="recipes">
+            <div class="container">
+                <div class="title  colorGreen">
+					<br>
+                    <h2 class="fw-bold colorGreen">Recipes</h2>
+                    <p>here is some Recipes: </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card text-center fixCard" >
+                            <img src="/images/falafel.jpg" class="card-img-top" alt="Fitness" height="150">
+                            <div class="card-body">
+                                <h5 class="card-title">falafel</h5>
+                                <p class="card-text">an arabic dish to make</p>
+                                <a href="#" class="card-link" style="text-decoration: none;">get the recipe</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center fixCard">
+                            <img src="/images/basbousa.webp" class="card-img-top" alt="Fitness" height="150">
+                            <div class="card-body">
+                                <h5 class="card-title">Basbousa</h5>
+                                <p class="card-text">an arabic thing to make Basbousa</p>
+                                <a href="#" class="card-link" style="text-decoration: none;">get the recipe</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center fixCard">
+                            <img src="/images/spaghetti.jpg" class="card-img-top" alt="Fitness" height="150">
+                            <div class="card-body">
+                                <h5 class="card-title">Spaghetti</h5>
+                                <p class="card-text">no comment</p>
+                                <a href="#" class="card-link" style="text-decoration: none;">get the recipe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <br>
+        <br>
+        <br>
+
+		<!-- Footer -->
+		<div class="footer py-5 text-white">&copy 2022 Recipes.com</div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
