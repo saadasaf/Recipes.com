@@ -38,18 +38,9 @@ body{
 
 
 
-.card-image {
-	height: 500px;
-	background-size: cover;
-	background-position: center;
-}
 
-@media (max-width: 991px) {
-	.card-group {
-		display: flex;
-		flex-flow: column wrap;
-	}
-}
+
+
 
 #recipes{
 	padding: 30px 0px;
@@ -83,7 +74,8 @@ body{
 /******************************************basbousa page********************************************************/
 
 .img{
-	padding-top: 50px;
+	padding: 80px;
+	padding-bottom: 0px;
 }	
 .receipe-headline span  {
 	font-size: 14px;
@@ -94,18 +86,7 @@ body{
 	font-size: 36px;
 	color: #474747;
 	margin-bottom: 30px; }
-	@media only screen and (max-width: 767px) {
-	  .receipe-headline h2 {
-		font-size: 24px; } }
-  .receipe-headline .receipe-duration {
-	border-left: 3px solid #40ba37;
-	padding: 15px; }
-	.receipe-headline .receipe-duration h6 {
-	  font-size: 15px;
-	  margin-bottom: 5px; }
-	  .receipe-headline .receipe-duration h6:last-child {
-		margin-bottom: 0; 
-	}
+
 	.receipe-ratings .ratings {
 		margin-bottom: 30px; 
 	}
@@ -117,7 +98,7 @@ body{
 	.single-preparation-step {
 		position: relative;
 		z-index: 1;
-		margin-bottom: 50px; 
+		margin-bottom: 0px; 
 	}
 
 	.single-preparation-step h4 {
